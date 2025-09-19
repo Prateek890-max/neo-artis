@@ -19,6 +19,33 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // Brand Colors
+        brand: {
+          saffron: "hsl(var(--brand-saffron))",
+          green: "hsl(var(--brand-green))",
+          navy: "hsl(var(--brand-navy))",
+        },
+        
+        // Role-based Colors
+        student: {
+          primary: "hsl(var(--student-primary))",
+          light: "hsl(210 100% 95%)",
+        },
+        admin: {
+          primary: "hsl(var(--admin-primary))",
+          light: "hsl(10 80% 95%)",
+        },
+        faculty: {
+          primary: "hsl(var(--faculty-primary))",
+          light: "hsl(280 60% 95%)",
+        },
+        
+        // Status Colors
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
+        error: "hsl(var(--error))",
+        info: "hsl(var(--info))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -57,6 +84,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
+        'gradient-admin': 'var(--gradient-admin)',
+        'gradient-student': 'var(--gradient-student)',
+      },
+      boxShadow: {
+        'card': 'var(--shadow-card)',
+        'elevated': 'var(--shadow-elevated)',
+        'glow': 'var(--shadow-glow)',
       },
       borderRadius: {
         lg: "var(--radius)",

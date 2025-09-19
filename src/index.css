@@ -2,14 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* NEP 2020 Education Platform Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
+    /* Core Brand Colors - Indian Education Theme */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+
+    /* Brand Colors - Saffron, White, Green */
+    --brand-saffron: 30 100% 60%;
+    --brand-green: 120 100% 25%;
+    --brand-navy: 220 30% 15%;
+    
+    /* Education Specific */
+    --student-primary: 210 100% 50%;
+    --admin-primary: 10 80% 50%;
+    --faculty-primary: 280 60% 50%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-saffron)), hsl(var(--admin-primary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(210 40% 98%));
+    --gradient-admin: linear-gradient(135deg, hsl(var(--admin-primary)), hsl(0 70% 45%));
+    --gradient-student: linear-gradient(135deg, hsl(var(--student-primary)), hsl(200 80% 45%));
+    
+    /* Status Colors */
+    --success: 120 60% 50%;
+    --warning: 45 100% 60%;
+    --error: 0 70% 50%;
+    --info: 210 100% 60%;
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(var(--brand-navy) / 0.1);
+    --shadow-elevated: 0 10px 40px -10px hsl(var(--brand-navy) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--brand-saffron) / 0.3);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
